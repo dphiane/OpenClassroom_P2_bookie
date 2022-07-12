@@ -1,0 +1,196 @@
+body {
+    margin-left: 2%;
+    margin-right: 2%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+/*header: nav */
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 15px;
+}
+.li-nav{
+    padding-bottom: 15px;
+    border-bottom: solid 3px #F2F2F2;
+}
+
+.li-nav:hover{
+    border-bottom: 3px solid #0065FC;
+    padding-bottom: 15px;}  
+
+/*Filtre & recherche*/
+.filter{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-search {
+    display: none;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: none;
+    border-style: none;
+}
+
+.btn-search-phone{
+    display: flex; 
+    justify-content: center;
+    align-items: center;       
+    width: 50px;
+    height: 50px;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: none;
+    border-style: none;
+}
+
+.search-phone{
+    box-shadow: none;
+    border-style: none;
+    background-color: #0065FC;
+    color: white;
+
+}
+
+/*Section hébergement & populaire*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;}
+
+
+.card-marseille{
+    border: 1px solid #F2F2F2;
+    box-shadow: 0px 2px 0px #F2F2F2
+}
+/*order*/
+.popular-section { 
+    order: 1;
+    width: 50%;
+}
+.hebergement-section{
+    order: 2;
+    background-color: white;
+    width: 95%;
+}
+.activite-section{  
+    background-color: white;
+    width: 95%;
+    order: 3;
+}
+
+/*media queries taille section populaire a 95% et non 30%, max 768px*/
+@media all and (max-width:768px){
+    .popular-section{
+    width: 95%;
+    }
+}
+
+.card-marseille{
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/*media queries pour telephone*/
+@media all and (max-width:768px){
+    
+    .article-activite{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .article-marseille{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;}
+}
+/* section activité media queries tablette entre 768px et 992px*/
+@media all and (min-width:768px) and (max-width:992px){
+    .article-marseille{
+        justify-content: space-around;
+    }
+    .card-marseille{
+        margin: 2%;
+    }
+    .article-activite{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .card-column{
+        flex-direction: row;
+        flex-wrap: wrap;
+        order:2
+    }
+    .card-column-2{
+        flex-direction: row;
+        flex-wrap: wrap;
+        order: 3;
+    }
+}
+
+    .img-activite{
+        height: 150px;
+        width: 350px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .card-activite{
+        display: flex;
+        flex-direction: column;
+        object-fit: cover;
+        overflow: hidden;
+        height: 100%;
+        height: 200px;
+        width: 350px;
+        border-radius: 20px;
+        margin-bottom: 5%;
+        box-shadow: 0px 2px 0px #F2F2F2;
+        border: solid 1px #F2F2F2;
+    }
+
+    .zoom-card-vieux-port{
+        height: 150px;
+        width: 350px;}
+
+    .img-vieux-port{
+        width: 350px;
+        height: 150px;}
+
+    .activite-section h2 {
+        margin-left: 5%;
+    }
+    .activite-section h3 {
+        margin: 5%;
+    }
+
+    /*footer */
+    @media all and (max-width:768px){
+        .bloc{
+            display: flex;
+            flex-direction: column;   
+            padding-left: 5%;
+        }
+    }
